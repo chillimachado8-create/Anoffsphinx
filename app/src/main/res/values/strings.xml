@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">ProjetoFinal</string>
+
+    <!-- Existing Status Messages -->
+    <string name="status_initializing">Initializing...</string>
+    <string name="status_permission_denied">🎤 Permission Denied</string>
+    <string name="status_permission_needed_resume">🎤 Permission Needed</string>
+    <string name="status_setup_recognizer">Setting up speech...</string>
+    <string name="status_recognizer_not_ready">🎤 Recognizer not ready</string>
+    <string name="say_photo_or_video">Say a command...</string> <!-- Not directly used in current Java, but good to keep -->
+    <string name="status_listening">🎤 Listening...</string>
+    <string name="status_hearing_speech">👂 Hearing speech...</string>
+    <string name="status_processing_speech">🧠 Processing...</string>
+    <string name="status_heard_partial">Heard: %1$s...</string> <!-- %1$s is for the partial text -->
+    <string name="status_error_recognizer_io">❌ Recognizer IO Error: %1$s</string>
+    <string name="status_error_recognizer_unexpected">❌ Unexpected Recognizer Setup Error</string>
+    <string name="status_error_recognition">⚠️ Recognition Error: %1$s</string> <!-- Takes a parameter -->
+    <string name="status_timeout_listening_again">⏰ Timeout. Listening again...</string>
+    <string name="status_opening_camera">📷 Opening camera...</string>
+    <string name="status_recording_video">🎥 Recording video...</string>
+    <string name="status_message_command">💬 Message command</string>
+    <string name="status_no_clear_audio">👂 Didn\'t catch that clearly. Try again.</string>
+    <string name="status_recognizer_issue_try_again">⚠️ Recognizer issue. Please try again.</string>
+    <string name="status_error_max_retries">🚫 Max recognition retries reached. Please restart.</string>
+    <string name="status_unrecognized_command">😕 Unrecognized: %1$s</string>
+    <string name="status_error_no_camera">❌ No camera app available.</string>
+    <string name="status_error_no_video_recorder">❌ No video recorder app available.</string>
+    <string name="status_stopped_listening">🎤 Listening stopped.</string>
+
+    <!-- Toasts -->
+    <string name="toast_permission_required">Microphone permission is vital for voice commands.</string>
+    <string name="toast_tts_lang_not_supported">TTS language (US English) not available.</string>
+    <string name="toast_tts_init_failed">TTS could not be initialized.</string>
+    <string name="toast_no_camera_app">No camera app found.</string>
+    <string name="toast_no_video_app">No video app found.</string>
+
+    <!-- TTS Messages -->
+    <string name="tts_system_ready">Voice system ready.</string> <!-- Will use this instead of tts_ready_for_command -->
+    <string name="tts_opening_camera_photo">Opening camera to take a photo.</string>
+    <string name="tts_starting_video_record">Starting video recording.</string>
+    <string name="tts_message_placeholder">Message function placeholder activated.</string>
+    <string name="tts_unrecognized_command">Sorry, I didn\'t understand the command %1$s.</string>
+    <string name="tts_did_not_catch_that">Sorry, I didn\'t quite catch that.</string>
+    <string name="tts_missed_that">My apologies, I missed what you said.</string>
+    <string name="tts_error_voice_recognition_failed_permanently">I\'m having trouble with voice recognition. Please try restarting the app later.</string>
+    <string name="status_error_starting_recognizer">⚠️ Error starting recognizer.</string>
+    <string name="status_error_recognition_generic">⚠️ Recognition error.</string> <!-- Generic version without parameter -->
+    <string name="status_error_recognizer_stuck">⚠️ Recognizer seems stuck. Restarting...</string>
+
+</resources>

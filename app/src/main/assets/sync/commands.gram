@@ -1,0 +1,42 @@
+jsgf
+#JSGF V1.0;
+grammar commands;
+
+// This grammar is designed for controlling basic Photo, Video, and Message actions
+// based on the command types discussed in the SLATE 2017 paper.
+// It aims for relatively natural and concise phrasing.
+
+public <command> =
+    <photo_command> |
+    <video_command> |
+    <message_command>;
+
+// --- Photo Commands ---
+// Users might say various things to take a photo.
+// "photo" and "picture" are key. "camera" can be ambiguous but is common.
+<photo_command> =
+    (take | snap) (photo | picture) | // e.g., take photo, snap picture
+    photo |                            // Shortest, most direct for photo
+    picture |                          // Common alternative
+    open camera for photo |            // More explicit "open camera"
+    capture (photo | picture);         // "capture" is also a valid verb
+
+// --- Video Commands ---
+// Similar variations for video.
+<video_command> =
+    record video |
+    start video |
+    video |                            // Shortest, most direct for video
+    capture video |
+    film video |                       // "film" is a synonym
+    start recording |                  // Generic recording start
+    begin video;
+
+// --- Message Commands ---
+// For initiating a message or text.
+<message_command> =
+    send (message | text) |
+    message |                          // Shortest for message
+    text |                             // Shortest for text
+    write message |
+    compose message;
